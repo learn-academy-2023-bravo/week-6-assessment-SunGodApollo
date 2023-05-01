@@ -46,7 +46,7 @@ class BlogPostsController < ApplicationController
   def update
     @post = BlogPost.find(params[:id])
     # ---7)
-    # This is part of the U in CRUD and POST http verb. Once the user fills out the form via our edit CRUD action, it is then submitted to update an existing value inside of our model as long as it is valid per our Rspec tests. 
+    # This is part of the U in CRUD and PATCH http verb. Once the user fills out the form via our edit CRUD action, it is then submitted to update an existing value inside of our model as long as it is valid per our Rspec tests. 
     @post.update(blog_post_params)
     if @post.valid?
       redirect_to blog_post_path(@post)
