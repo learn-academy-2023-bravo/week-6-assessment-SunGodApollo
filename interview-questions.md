@@ -39,9 +39,11 @@ action: "GET" location: /students/new
 THis would call on the new method inside of our controller file. It gets input from the user via a form that one creates. 
 
 action: "GET" location: /students/2
+This would call on the 2nd entry in students model table. It would show whatever is in that column from our students model. 
 
 
 action: "GET" location: /students/2/edit
+This would call on the second entry of our students model, and it would show some kind of form that allows the user to edit the column, assuming the input meets validations.
 
 action: "PATCH" location: /students/2
 This calls on the update method in the controller file. This updates with whatever the user wishes, as long as it passes validations. 

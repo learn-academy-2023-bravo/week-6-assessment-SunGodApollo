@@ -43,9 +43,11 @@ describe("sentenceArr", () => {
   - create a function named sentenceArr
   - input: array of objects
   - process:
-    - make the name value an array separating each word into its own index using split(" ")
-    - map over array to put in a sentence
-  -output: array with a sentence about each person with names capitalized.
+    - map over array to put in a sentence, assign map to variable arrSentence
+    - make variable capWords and separate each letter into its own index using split(" ") from the values of the name keys.
+    - iterate over split array using a for loop, convert char at 0 to uppercase, then add to rest of letters using .slice(1) to start from the letter right after the one we just capitalized.
+    - create variable called name and use .join to join letters from capWords back into a word.
+  -output: array with interpolated name and the value of occupation.
 */
 
 const sentenceArr = (array) => {
